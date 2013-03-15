@@ -1,0 +1,48 @@
+#start, figure { display: none; }
+#app {
+    margin: 30px 30px 50px;
+    position: relative;
+}
+#players {
+    position: absolute;
+    z-index: -1;
+}
+.player {
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    border-bottom: 2px solid;
+}
+.goal-up { top: -30px; }
+.goal-down { bottom: -30px; border-bottom: none; border-top: 2px solid; }
+.goal-right {
+    right: -30px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: top right;
+    -moz-transform-origin: top right;
+    -ms-transform-origin: top right;
+    -o-transform-origin: top right;
+    transform-origin: top right;
+}
+.goal-left {
+    left: -30px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform-origin: top left;
+    -moz-transform-origin: top left;
+    -ms-transform-origin: top left;
+    -o-transform-origin: top left;
+    transform-origin: top left;
+}
+.goal-right, .goal-left { top: 100%; }
+.fences {
+    float: right;
+    font-weight: bold;
+}

@@ -1,0 +1,47 @@
+<div class="span8 pull-right">
+	<figure>
+		<div id="app">
+			<div id="players"></div>
+			<canvas id="interface"></canvas>
+		</div>
+		<figcaption id="caption" class="alert">The first player who reaches one of the nine squares opposite his base line is the winner.</figcaption>
+		<hr>
+	</figure>
+	<header>
+		<div class="well">
+			<h1>Pawns & Fences <small style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif">DEMONSTRATION</small></h1>
+			<blockquote>
+				<p class="lead">Be the first to reach the line opposite to your base line.</p>
+			</blockquote>
+			<p>
+				<button id="start" class="btn btn-primary btn-large">Start</button>
+				<img id="loader" src="/img/loader.gif" alt="Loading ..." />
+			</p>
+			<p>This is the demo page of the <a href="http://webmaestro.fr/blog/board-game-experiment-js-prototypes-canvas/">step-by-step experiment on how to make a board game in JavaScript</a>.</p>
+			<p>There is quite a few things to improve as well, so let's call it a <span class="label">BÊTA</span> version.</p>
+		</div>
+	</header>
+</div>
+
+<form class="span4" method="get">
+	<input class="input-medium" type="text" id="name" name="username" placeholder="Name">
+</form>
+
+<section class="span8 pull-right">
+	<h2>Rules</h2>
+	<dl>
+		<dt>Game</dt>
+		<dd id="rule-0">Each player in turn, chooses to move his pawn or to put up one of his fences.</dd>
+		<dd id="rule-1">When he has <strong>run out of fences</strong>, the player must move his pawn.</dd>
+		<dt>Pawn moves</dt>
+		<dd id="rule-2">The pawns are moved <strong>one square at a time</strong>, horizontally or vertically, forwards or backwards.</dd>
+		<dd id="rule-3">The pawns must get around the fences.</dd>
+		<dt>Positionning of the fences</dt>
+		<dd id="rule-4">The fences must be placed between two sets of two squares.</dd>
+		<dd id="rule-5">The fences can be used to facilitate the player's progress or to impede that of the opponent, however, <strong>an access to the goal line must always be left open</strong>.</dd>
+		<dt>Face to face</dt>
+		<dd id="rule-6">When two pawns face each other one on neighbouring squares which are not separated by a fence, <strong>the player whose turn it is can jump the opponent's pawn</strong> (and place himself behind him), thus advancing an extra square.</dd>
+		<dd id="rule-7">If there is a fence behind the said pawn, the player can place his pawn to the left or the right of the other pawn.</dd>
+		<dd id="rule-8">It is forbidden to jump more than one pawn.</dd>
+	</dl>
+</section>
